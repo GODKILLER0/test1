@@ -38,6 +38,10 @@ public class Main {
                         .reduce(0, Integer::sum);
 
         System.out.println(rul2);
+        int rul3= test.stream()
+                .reduce(Integer.MIN_VALUE,Integer::max);
+
+        System.out.println(rul3);
     }
 
 
